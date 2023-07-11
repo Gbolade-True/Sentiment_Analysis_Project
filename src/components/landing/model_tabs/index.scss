@@ -1,0 +1,11 @@
+@import "../../../styles/variables.scss";
+
+.model_tabs {
+    .model_info {
+        text-align: right;
+        
+        @media screen and (max-width:$md-breakpoint){
+            text-align: center;
+        }
+    }
+}

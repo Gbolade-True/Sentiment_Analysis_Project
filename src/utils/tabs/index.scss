@@ -1,0 +1,31 @@
+
+@import "../../styles/variables.scss";
+
+.tab-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 50px;
+        
+    @media screen and (max-width:$md-breakpoint){
+        justify-content: center;
+        gap: 12px;
+    }
+
+    button{
+        font-size: 20px;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all ease-in-out .2s;
+        border-bottom: 2px solid transparent;  
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+
+        &.active {
+            border-bottom: 2px solid #FF407B;
+            color: #FF407B;
+        }
+    }
+}

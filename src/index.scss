@@ -1,0 +1,64 @@
+@import './styles/mixins.scss';
+@import './styles/variables.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $base-color;
+  background-color: #F2F3F4;
+  max-width: 1640px;
+  width: 100%;
+  margin: 0 auto;
+
+  p{
+    font-size: 14px;
+    line-height: 18px;
+    @media (min-width: $md-breakpoint) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .full_page_loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 16, 16, 0.2);
+  
+    .loading-ring-css  {
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 200px;
+      height: 200px;
+
+      div {
+        position: absolute;
+        display: block;
+        width: 160px;
+        height: 160px;
+        top: 20px;
+        left: 20px;
+        border-radius: 80px;
+        box-shadow: 0 6px 0 0 #ffffff;
+        -ms-animation: loading-ring-anim 1s linear infinite;
+        -moz-animation: loading-ring-anim 1s linear infinite;
+        -webkit-animation: loading-ring-anim 1s linear infinite;
+        -o-animation: loading-ring-anim 1s linear infinite;
+        animation: loading-ring-anim 1s linear infinite;
+      }
+    }
+  }
+
+  /* Animation */
+  @include full_page_loader_animation;
+};
