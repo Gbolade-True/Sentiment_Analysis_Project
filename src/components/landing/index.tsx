@@ -47,11 +47,9 @@ const Landing = () => {
                         positive, negative, or neutral. 
                     </p>
                     <Link 
-                        to=''
+                        to={pageurl.GITHUB_PROJECT}
                         className='github_link'
-                        onClick={() => {
-                            window.open(pageurl.GITHUB_PROJECT, '', 'width=1024, height=786');
-                        }}
+                        target="_blank" rel="noopener noreferrer"
                     >
                         View my project on Github
                         <i className="fas fa-arrow-right" style={{ marginLeft: '8px', fontSize: '18px' }} />

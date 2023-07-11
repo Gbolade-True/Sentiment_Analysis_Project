@@ -41,6 +41,10 @@
                 color: #407BFF;
                 text-decoration: underline;
 
+                @media screen and (max-width:$md-breakpoint){
+                    font-size: 18px;
+                }
+
                 &:hover {
                     color: darken(#407BFF, 20);;
                     transform: scale(1.01);
@@ -97,6 +101,11 @@
                 font-weight: 500;
                 margin-top: 20px;
                 margin-top: 0;
+
+                @media screen and (max-width:$md-breakpoint){
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
             }
 
             @media screen and (max-width:$md-breakpoint){
