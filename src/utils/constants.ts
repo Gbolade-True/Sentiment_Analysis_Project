@@ -6,4 +6,4 @@ export const pageurl = {
     PAGE_404: '/page-404',
 };
 
-export const api_baseurl = 'http://localhost:8000';
+export const api_baseurl = 'https://eb1c-31-205-115-239.ngrok-free.app';
