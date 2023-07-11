@@ -1,5 +1,14 @@
+@import "../../../styles/variables.scss";
+
 .result_item {
     display: flex;
     gap: 40px;
     align-items: center;
+
+    @media screen and (max-width:$md-breakpoint){
+        flex-direction: column-reverse;
+        gap: 0px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #ccc;
+    }
 }
