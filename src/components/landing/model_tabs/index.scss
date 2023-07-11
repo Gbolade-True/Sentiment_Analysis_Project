@@ -1,6 +1,9 @@
 @import "../../../styles/variables.scss";
 
 .model_tabs {
+    @media screen and (max-width:$md-breakpoint){
+        margin-top: 40px;
+    }
     .model_info {
         text-align: right;
         

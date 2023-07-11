@@ -62,10 +62,6 @@ const Landing = () => {
                 </div>
             </div>
 
-            <h2 className='try_it_out'>
-                Try it out with these models
-            </h2>
-
             <div className='model_action'>
                 <div className='model_tabs_container'>
                     <ModelTabs
@@ -75,7 +71,9 @@ const Landing = () => {
                 </div>
                 <div className='divider' />
                 <div className='search_area'>
-                    <p>Test with your custom reviews</p>
+                    <h2 className='try_it_out'>
+                        Try it out with these models
+                    </h2>
                     <Textarea
                         placeholder='Place your text in here...'
                         style={{ maxWidth: '500px' }}

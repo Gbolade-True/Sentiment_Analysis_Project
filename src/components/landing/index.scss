@@ -62,13 +62,6 @@
         }
     }
 
-    .try_it_out {
-        text-align: center;
-        font-weight: 300;
-        margin-top: 20px;
-        text-decoration: underline;
-    }
-
     .model_action {
         display: flex;
         align-items: flex-start;
@@ -99,6 +92,12 @@
 
         .search_area {
             width: 50%;
+
+            .try_it_out {
+                font-weight: 500;
+                margin-top: 20px;
+                margin-top: 0;
+            }
 
             @media screen and (max-width:$md-breakpoint){
                 width: 100%;
