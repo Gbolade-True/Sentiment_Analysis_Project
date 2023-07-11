@@ -38,7 +38,6 @@ export const Results = ({ loading, predictions }: ResultProps) => {
                 />
             return ResultsDisplay
         }
-
         ResultsDisplay = 
             <>
                 {
