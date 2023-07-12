@@ -1,4 +1,4 @@
-import { Predictions } from "interfaces/IResponse";
+import { ModelPrediction, Predictions } from "interfaces/IResponse";
 import { ResultPieChart } from "utils/result_pie_chart";
 import { isObjectFalsy } from "utils/helpers";
 import { EmptyState } from "utils/empty-state";
@@ -14,7 +14,8 @@ interface ResultProps {
 export const Results = ({ loading, predictions }: ResultProps) => {
     const { vader, naive, rnn, average_verdict } = predictions || {};
 
-    const getVerdict = (score: number) => {
+    const getVerdict = (score: ModelPrediction) => {
+        if (score === 'N/A' )return 'N/A'
         if(score <= 0.35) return <p>Negative <i className="far fa-frown" style={{ color: '#ff0000' }}/></p>
         if(score <= 0.6) return <p>Neutral <i className="far fa-meh" style={{ color: '#5d5b5b' }}/></p>
         return <p>Positive <i className="far fa-smile" style={{ color: '#00ff00' }} /></p>

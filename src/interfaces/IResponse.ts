@@ -2,9 +2,11 @@ export interface SentimentsResponse {
     data: Predictions
 }
 
+export type ModelPrediction = number | 'N/A';
+
 export interface Predictions {
-    rnn?: number;
-    naive: number;
-    vader?: number;
+    rnn?: ModelPrediction;
+    naive: ModelPrediction;
+    vader?: ModelPrediction;
     average_verdict?: number;
 }
