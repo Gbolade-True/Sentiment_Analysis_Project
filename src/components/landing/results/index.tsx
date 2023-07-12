@@ -12,11 +12,11 @@ interface ResultProps {
 }
 
 export const Results = ({ loading, predictions }: ResultProps) => {
-    const { vader, naive, rnn } = predictions || {};
+    const { vader, naive, rnn, average_verdict } = predictions || {};
 
     const getVerdict = (score: number) => {
-        if(score <= 0.35) return <p>Negative<i className="far fa-frown" style={{ color: '#ff0000' }}/></p>
-        if(score <= 0.6) return <p>Neutral<i className="far fa-meh" style={{ color: '#5d5b5b' }}/></p>
+        if(score <= 0.35) return <p>Negative <i className="far fa-frown" style={{ color: '#ff0000' }}/></p>
+        if(score <= 0.6) return <p>Neutral <i className="far fa-meh" style={{ color: '#5d5b5b' }}/></p>
         return <p>Positive <i className="far fa-smile" style={{ color: '#00ff00' }} /></p>
     }
 
@@ -56,22 +56,19 @@ export const Results = ({ loading, predictions }: ResultProps) => {
             <>
                 <h1 style={{ color: '#FF407B' }}>Results</h1>
                 <Table rows={rows} headCells={headCells} />
-                {vader ?
+                {average_verdict ?
                     <div className="final_verdict">
                         <div>
-                            <h2>Overall Verdict: {getVerdict(vader!)}</h2>
-                            <p>Prediction: <b>{vader}</b></p>
+                            <h2>Overall Verdict: {getVerdict(average_verdict!)}</h2>
+                            <p>Prediction: <b>{average_verdict}</b></p>
                         </div>
-                        <ResultPieChart guage={vader} />
+                        <ResultPieChart guage={average_verdict} />
                     </div>
                     : null 
                 }
             </>
         return ResultsDisplay
     }
-
-
-
 
     return(
         <div>

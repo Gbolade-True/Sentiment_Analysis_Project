@@ -11,7 +11,6 @@
 
         @media screen and (max-width:$md-breakpoint){
             font-size: 24px;
-            margin-top: 20px;
         }
     }
 
@@ -28,6 +27,11 @@
                 object-fit: cover;
             }
         }
+
+        .form {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     .model_action {
@@ -38,6 +42,7 @@
 
         @media screen and (max-width:$md-breakpoint){
             flex-direction: column;
+            margin-top: 30px;
         }
 
         .info_left{

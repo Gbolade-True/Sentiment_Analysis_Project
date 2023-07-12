@@ -35,6 +35,16 @@ const Landing = () => {
         })
     }
 
+    const getPredictionsOnEnter = (e: React.KeyboardEvent<HTMLDivElement>) => {
+        if (!userText) return;
+
+		if (e.key === 'Enter') {
+			e.preventDefault();
+			e.stopPropagation();
+			getPredictions();
+		}
+	};
+
     return (
         <div className='landing_page'>
             <div className='search_area'>
@@ -49,20 +59,25 @@ const Landing = () => {
                 <h1 className='try_it_out'>
                     Check sentiments in text
                 </h1>
-                <Textarea
-                    placeholder='Place your text in here...'
-                    style={{ maxWidth: '500px' }}
-                    value={userText}
-                    onChange={(e) => setUserText(e.target.value)}
-                    helperText={!userText ? 'This cannot be empty...' : undefined}
-                />
-                <Button
-                    onClick={getPredictions}
-                    disabled={!userText}
-                    loading={loading}
+                <div
+                    onKeyDown={e => getPredictionsOnEnter(e)}
+                    className='form'
                 >
-                    Enter
-                </Button>
+                    <Textarea
+                        placeholder='Place your text in here...'
+                        style={{ maxWidth: '500px' }}
+                        value={userText}
+                        onChange={(e) => setUserText(e.target.value)}
+                        helperText={!userText ? 'This cannot be empty...' : undefined}
+                    />
+                    <Button
+                        onClick={getPredictions}
+                        disabled={!userText}
+                        loading={loading}
+                    >
+                        Enter
+                    </Button>
+                </div>
             </div>
 
             <div className='model_action'>
