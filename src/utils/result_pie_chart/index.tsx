@@ -103,7 +103,7 @@ export const ResultPieChart = ({ guage }: PieChartProps) => {
   };
 
   return (
-    <PieChart width={400} height={250}>
+    <PieChart width={400} height={300}>
       <Pie
         dataKey="value"
         startAngle={180}

@@ -1,5 +1,6 @@
 export const pageurl = {
     LANDING: '/',
+    ATTRIBUTIONS: '/',
     GITHUB: 'https://github.com/Gbolade-True',
     LINKED_IN: 'https://www.linkedin.com/in/ibukunoluwa-popoola-89793b124/',
     GITHUB_PROJECT: 'https://github.com/Gbolade-True/Sentiment_Analysis_Project',

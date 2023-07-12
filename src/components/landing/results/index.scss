@@ -1,9 +1,9 @@
 @import "../../../styles/variables.scss";
 
-.result_item {
+.final_verdict {
     display: flex;
-    gap: 40px;
     align-items: center;
+    gap: 40px;
 
     @media screen and (max-width:$md-breakpoint){
         flex-direction: column-reverse;

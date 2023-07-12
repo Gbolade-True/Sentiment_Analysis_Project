@@ -33,6 +33,14 @@ const Footer = () => {
                         Email
                     </Link>
                 </div>
+                <Link 
+                    style={{ color: "#ffffff", cursor: 'pointer' }} 
+                    to={pageurl.ATTRIBUTIONS}
+                    target="_blank" rel="noopener noreferrer"
+                >
+                    Attributions
+                    {/* <a href="https://www.flaticon.com/free-icons/feeling" title="feeling icons">Feeling icons created by juicy_fish - Flaticon</a> */}
+                </Link>
                 <Copyright />
             </div> 
             <div className='kcl_logo'>

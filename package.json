@@ -49,6 +49,7 @@
     "node": "18.16.1"
   },
   "devDependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.3",
     "sass": "^1.63.6"
   }
 }

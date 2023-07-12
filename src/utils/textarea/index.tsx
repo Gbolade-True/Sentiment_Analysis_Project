@@ -14,12 +14,10 @@ export const Textarea = ({ isTextField, helperText, ...rest }: CustomTextareaPro
                 {...rest}
             >
             </textarea>
-            {helperText && 
-                <>
-                    <br/>
-                    <i style={{ fontSize: '12px', color: '#adabab' }} >{helperText}</i>
-                </>
-            }
+            <div className='helper_text_container'>
+                <br/>
+                <i>{helperText}</i>
+            </div>
         </div>
     )
 }

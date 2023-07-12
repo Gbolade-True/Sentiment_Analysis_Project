@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
-import './index.scss';
-import s_a_svg from 'extras/images/sentiment_analysis.svg'
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import { pageurl } from 'utils/constants';
 import { ModelTabs } from './model_tabs';
 import { useState } from 'react';
@@ -12,6 +11,7 @@ import { Predictions } from 'interfaces/IResponse';
 import Modal from 'utils/modal';
 import { Results } from './results';
 import Footer from 'components/navigations/footer';
+import './index.scss';
 
 const Landing = () => {
     const [modelType, setModelType] = useState<ModelType>('vader');
@@ -38,9 +38,14 @@ const Landing = () => {
     return (
         <div className='landing_page'>
             <div className='search_area'>
-                <div className='s_a_image'>
-                    <img src={s_a_svg} alt='sentiment_analysis' />
-                </div>
+                <Player
+                    autoplay
+                    loop
+                    src="https://lottie.host/6c7accfa-c423-4548-80d5-fe4a728fc95e/NM981LCdj6.json"
+                    style={{ height: '300px', width: '300px' }}
+                    >
+                    <Controls visible={false} buttons={[]} />
+                </Player>
                 <h1 className='try_it_out'>
                     Check sentiments in text
                 </h1>
