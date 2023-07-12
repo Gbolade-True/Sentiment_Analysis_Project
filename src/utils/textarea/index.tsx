@@ -9,7 +9,7 @@ interface CustomTextareaProps extends React.InputHTMLAttributes<HTMLTextAreaElem
 export const Textarea = ({ isTextField, helperText, ...rest }: CustomTextareaProps) => {
 
     return(
-        <div>
+        <div className='textarea_container'>
             <textarea
                 {...rest}
             >

@@ -4,7 +4,6 @@
 .tab-buttons{
     display: flex;
     align-items: center;
-    justify-content: right;
     gap: 50px;
         
     @media screen and (max-width:$md-breakpoint){

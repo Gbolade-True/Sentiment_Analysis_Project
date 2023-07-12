@@ -37,7 +37,30 @@ const Landing = () => {
 
     return (
         <div className='landing_page'>
-            <div className='info_hero'>
+            <div className='search_area'>
+                <div className='s_a_image'>
+                    <img src={s_a_svg} alt='sentiment_analysis' />
+                </div>
+                <h1 className='try_it_out'>
+                    Check sentiments in text
+                </h1>
+                <Textarea
+                    placeholder='Place your text in here...'
+                    style={{ maxWidth: '500px' }}
+                    value={userText}
+                    onChange={(e) => setUserText(e.target.value)}
+                    helperText={!userText ? 'This cannot be empty...' : undefined}
+                />
+                <Button
+                    onClick={getPredictions}
+                    disabled={!userText}
+                    loading={loading}
+                >
+                    Enter
+                </Button>
+            </div>
+
+            <div className='model_action'>
                 <div className='info_left'>
                     <h1>Sentiment Analysis</h1>
                     <p className='s_a_desc'>
@@ -55,39 +78,15 @@ const Landing = () => {
                         <i className="fas fa-arrow-right" style={{ marginLeft: '8px', fontSize: '18px' }} />
                     </Link>
                 </div>
-                <div className='s_a_image'>
-                    <img src={s_a_svg} alt='sentiment_analysis' />
-                </div>
-            </div>
-
-            <div className='model_action'>
+                <div className='divider' />
                 <div className='model_tabs_container'>
                     <ModelTabs
                         selectedModel={modelType}
                         setModelType={setModelType}
                     />
                 </div>
-                <div className='divider' />
-                <div className='search_area'>
-                    <h2 className='try_it_out'>
-                        Try it out with these models
-                    </h2>
-                    <Textarea
-                        placeholder='Place your text in here...'
-                        style={{ maxWidth: '500px' }}
-                        value={userText}
-                        onChange={(e) => setUserText(e.target.value)}
-                        helperText={!userText ? 'This cannot be empty...' : undefined}
-                    />
-                    <Button
-                        onClick={getPredictions}
-                        disabled={!userText}
-                        loading={loading}
-                    >
-                        Enter
-                    </Button>
-                </div>
             </div>
+
             <Modal show={showModal} handleClose={() => setShowModal(false)}>
                 <Results
                     loading={loading}
