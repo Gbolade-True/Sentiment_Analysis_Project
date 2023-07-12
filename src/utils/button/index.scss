@@ -9,4 +9,17 @@
     button{
         @include button
     }
+
+    .button_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+
+        img, i {
+            height: 20px;
+            width: 20px;
+            font-size: 20px;
+        }
+    }
 }

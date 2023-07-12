@@ -1,10 +1,21 @@
+@import "../../styles/variables.scss";
+
 textarea {
-  width:80%;
+  width:90%;
   resize: vertical;
   padding:15px;
-  border-radius:15px;
-  border:0;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
   box-shadow:4px 4px 10px rgba(0,0,0,0.06);
   height:150px;
   font-family: 'Montserrat', sans-serif;
+
+  &:hover {
+    outline: 1px solid $main_blue;
+	}
+
+	&:focus {
+		outline: 1.5px solid $main_blue;
+	}
 }

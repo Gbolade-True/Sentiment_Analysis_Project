@@ -9,7 +9,7 @@ interface CustomTextareaProps extends React.InputHTMLAttributes<HTMLTextAreaElem
 export const Textarea = ({ isTextField, helperText, ...rest }: CustomTextareaProps) => {
 
     return(
-        <label className="custom-field one">
+        <div>
             <textarea
                 {...rest}
             >
@@ -20,6 +20,6 @@ export const Textarea = ({ isTextField, helperText, ...rest }: CustomTextareaPro
                     <i style={{ fontSize: '12px', color: '#adabab' }} >{helperText}</i>
                 </>
             }
-        </label>
+        </div>
     )
 }

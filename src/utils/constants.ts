@@ -2,7 +2,7 @@ export const pageurl = {
     LANDING: '/',
     GITHUB: 'https://github.com/Gbolade-True',
     LINKED_IN: 'https://www.linkedin.com/in/ibukunoluwa-popoola-89793b124/',
-    GITHUB_PROJECT: 'https://github.com/Gbolade-True',
+    GITHUB_PROJECT: 'https://github.com/Gbolade-True/Sentiment_Analysis_Project',
     PAGE_404: '/page-404',
 };
 
