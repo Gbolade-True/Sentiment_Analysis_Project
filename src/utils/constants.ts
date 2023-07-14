@@ -1,6 +1,6 @@
 export const pageurl = {
     LANDING: '/',
-    ATTRIBUTIONS: '/',
+    ATTRIBUTIONS: 'https://docs.google.com/document/d/1UIpAgMDpjOIp9U7MzcxZ7KHPmTZIASxT-uw6-SOkrBI/edit?usp=sharing',
     GITHUB: 'https://github.com/Gbolade-True',
     LINKED_IN: 'https://www.linkedin.com/in/ibukunoluwa-popoola-89793b124/',
     GITHUB_PROJECT: 'https://github.com/Gbolade-True/Sentiment_Analysis_Project',

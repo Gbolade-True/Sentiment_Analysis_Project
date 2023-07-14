@@ -4,7 +4,6 @@ import kclLogo from 'extras/images/kcl_logo.png';
 import { pageurl } from 'utils/constants';
 import './footer.scss'
 
-
 const Footer = () => {
 
     return(
@@ -39,7 +38,6 @@ const Footer = () => {
                     target="_blank" rel="noopener noreferrer"
                 >
                     Attributions
-                    {/* <a href="https://www.flaticon.com/free-icons/feeling" title="feeling icons">Feeling icons created by juicy_fish - Flaticon</a> */}
                 </Link>
                 <Copyright />
             </div> 

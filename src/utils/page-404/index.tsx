@@ -1,7 +1,6 @@
-import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { pageurl } from 'utils/constants';
-import trafficlightimg from 'extras/images/404.jpg'
+import img404 from 'extras/images/404.jpg'
 import { Button } from 'utils/button';
 
 const Page404 = () => {
@@ -9,7 +8,7 @@ const Page404 = () => {
     const navigate = useNavigate();
 
     return(
-        <div style={{width:"100%", height:"100vh", position: "relative", backgroundImage:`url(${trafficlightimg})`,backgroundSize:"contain"}}>
+        <div style={{width:"100%", height:"100vh", position: "relative", backgroundImage:`url(${img404})`,backgroundSize:"contain"}}>
             
             <div style={{background:"#000", opacity:.8, width:"100%", height:"100%", position:"absolute", top:0, left:0, zIndex:1}}/>
             
