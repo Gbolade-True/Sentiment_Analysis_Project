@@ -14,7 +14,8 @@ const requestFactory = async (
         params,
         data,
         headers,
-        baseURL: api_baseurl
+        baseURL: api_baseurl,
+        timeout: 60 * 1000
     });
     
     return response as AxiosResponse<any>;

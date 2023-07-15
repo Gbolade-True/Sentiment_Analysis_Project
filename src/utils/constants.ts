@@ -7,4 +7,6 @@ export const pageurl = {
     PAGE_404: '/page-404',
 };
 
-export const api_baseurl = 'https://eb1c-31-205-115-239.ngrok-free.app';
+export const BOOT_MODEL_TIMEOUT = 30 * 1000
+
+export const api_baseurl = 'https://sentiment-analysis-392213.uc.r.appspot.com';
