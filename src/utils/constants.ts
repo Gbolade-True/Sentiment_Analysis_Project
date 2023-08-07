@@ -10,3 +10,4 @@ export const pageurl = {
 export const BOOT_MODEL_TIMEOUT = 30 * 1000
 
 export const api_baseurl = 'https://sentiment-analysis-392213.uc.r.appspot.com';
+// export const api_baseurl = 'http://localhost:8000';

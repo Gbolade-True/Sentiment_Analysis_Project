@@ -1,3 +1,4 @@
+import api from 'api';
 import { Link } from 'react-router-dom';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import { BOOT_MODEL_TIMEOUT, pageurl } from 'utils/constants';
@@ -6,7 +7,6 @@ import { useState } from 'react';
 import { ModelType } from './modelInfo';
 import { Textarea } from 'utils/textarea';
 import { Button } from 'utils/button';
-import api from 'api';
 import { Predictions } from 'interfaces/IResponse';
 import Modal from 'utils/modal';
 import { Results } from './results';
@@ -49,8 +49,6 @@ const Landing = () => {
 			getPredictions();
 		}
 	};
-
-    console.log(bootModel, 'bootModel')
 
     return (
         <div className='landing_page'>
