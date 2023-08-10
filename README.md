@@ -1,12 +1,21 @@
 # Sentiment_Analysis_Project
 Sentiment Analysis: A comparison of models
-
-# Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The application uses Typescript for static typing and other advanced features. It is configured using the `tsconfig.json` in the root folder.
+The packages used are managed in `package.json`.
 
-## Available Scripts
+To install the package dependencies, you need `Node.JS` and `nvm (Node Version Manager)` installed.
+If you dont have them, here are links to download the resources:
+[Install NodeJS](https://nodejs.org/en/download)
+[Install nvm](https://heynode.com/tutorial/install-nodejs-locally-nvm)
 
+Run `nvm install 18.16.1`
+Then run `nvm use 18.16.1`
+
+To install the dependencies:
+### `yarn install`
+
+After successful installation
 In the project directory, you can run:
 
 ### `yarn start`
@@ -31,20 +40,8 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
